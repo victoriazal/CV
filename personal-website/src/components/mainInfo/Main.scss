@@ -1,0 +1,10 @@
+.main{
+    background-color:#ffffff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &_grain-bg{
+        border-radius: 20px;
+        margin-top: 40px;
+    }
+}

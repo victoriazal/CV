@@ -1,0 +1,48 @@
+.legend {
+  background-color: black;
+}
+
+.carousel {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    transform-style: preserve-3d;
+  &-wrapper {
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  &_item {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    z-index: 100;
+    transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
+}
+  &_item.initial,
+  &_item.active {
+    opacity: 1;
+    position: relative;
+    z-index: 900;
+  }
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
