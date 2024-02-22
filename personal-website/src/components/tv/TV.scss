@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh);
+}
+
+.TV {
+  position: relative;
+  &_language{
+    width: calc(21vw);
+    position: absolute;
+    font-family: "VT323";
+    top: 20%;
+    left: 18%;
+    background-color: transparent;
+  }
+  &_box {
+    width: calc(75vw);
+  }
+  &_screen {
+    width: calc(38vw);
+    height: calc(28vw);
+    position: absolute;
+    background-color: black;
+    border-radius: 12px;
+    top: 21.5%;
+    left: 11.5%;
+    color: rgb(101, 103, 98);
+    box-shadow: 0px 0px 15px 20px rgba(51, 48, 48, 0.31);
+    
+    p {
+      line-height: 1;
+      background: white;
+      color: black;
+      opacity: 0.5;
+      font-size: 18px;
+      font-family: "VT323";
+      font-weight: 400;
+      margin: 5px 10px;
+    }
+    ul{
+      margin: 0;
+      position: relative;
+    }
+    li {
+      color: black;
+      font-family: "VT323";
+      margin-bottom: 2px;
+      margin-right: 10px;
+      overflow: hidden;
+      border-right: .15em solid rgb(28, 255, 3);
+      white-space: nowrap;
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+  }
+  &_switch {
+    cursor: pointer;
+    width: calc(7vw);
+    position: absolute;
+    transform-origin: 50% 54.67%;
+    top: 19.6%;
+    right: 14.1%;
+  }
+}
+.noise::before {
+  width: calc(38vw);
+  height: calc(28vw);
+  position: absolute;
+  top: 0;
+  border-radius: 12px;
+  content: "";
+  opacity: 0.1;
+  z-index: 1000;
+  pointer-events: none;
+  background: url(../../../public/noise.gif);
+}
+
+.nicolson {
+  opacity: 0.65;
+}
+.mario{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.jasper{
+  width: calc(38vw);
+    height: calc(28vw);
+    position: absolute;
+    border-radius: 12px;
+}
+.tetris{
+  opacity: 0.2;
+}
+.pongCats{
+  opacity: 0.8;
+}
+.marioText{
+  position: relative;
+  color: rgb(205, 203, 203);
+  margin: 30px 0 5px 40px;
+  z-index: 50;
+  font-family: "VT323";
+  font-size: 18px;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(151, 215, 12);
+  }
+}

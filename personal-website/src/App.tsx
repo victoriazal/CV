@@ -1,14 +1,14 @@
-import './App.scss'
-import Header from './components/header/Header'
-import Main from './components/mainInfo/Main'
-
+import "./App.scss";
+import { ParallaxProvider } from "react-scroll-parallax";
+import Tv from "./components/tv/TV";
 function App() {
   return (
     <>
-    <Header/>
-    <Main/>
+      <ParallaxProvider>
+        <Tv />
+      </ParallaxProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
