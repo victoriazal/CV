@@ -12,6 +12,14 @@ export default function Tv() {
   return (
     <>
       <div className="container">
+      {degreeAngle===40?(
+            <div className="switch-hint"> 
+              <h2>
+                switch the channel,please
+              </h2>
+              <img className="switch-hint_arrow" src="" alt="arrow" />
+              </div>
+          ):''}
         <div className="TV">
           <img
             className="TV_box"
@@ -26,55 +34,59 @@ export default function Tv() {
             ></img>
           ) : degreeAngle === 80 ? (
             <div className="TV_screen">
-              <p>name: Viktoryia Zalomnava</p>
-              <p>age: 25</p>
-              <p>location: Spain, Valencia</p>
+              <p>NAME: VIKTORYIA ZALOMNAVA</p>
+              <p>AGE: 25</p>
               <p>FRONTEND REACT DEV</p>
+              <p>LOCATION: SPAIN, VALENCIA</p>
+              <p>EXPERIENCE:2 YEARS</p>
+              <p>EDUCATION:MASTER OF PHARMACY</p>
               <div className="noise"></div>
             </div>
           ) : degreeAngle === 120 ? (
+            <div>
+              <p className="TV_language">
+            Languages:
+            <br />
+            English-C1
+            <br /> Spanish-A2
+            <br /> Russian-Native
+          </p>
+          <img
+            className="TV_screen tetris"
+            alt="tv"
+            src="../../../public/tetris.gif"
+          ></img>
+            </div>
+          ) : degreeAngle === 160 ? (
+            <div className="TV_screen ">
             <img
+              className="TV_screen mario"
+              alt="tv"
+              src="../../../public/mario.gif"
+            ></img>
+            <h5 className="marioText">My programming skills</h5>
+            <ul>
+              <li>HTML5/CSS/SASS</li>
+              <li>JS/TS</li>
+              <li>React / Redux </li>
+              <li>React Native/React spring</li>
+              <li>React Testing Library</li>
+              <li>NestJS</li>
+              <li>Git/swagger</li>
+              <li>SQL/Prettier/Husky/Axious</li>
+            </ul>
+            <div className="noise"></div>
+          </div>
+          ) : degreeAngle === 200 ? (
+            <div>
+                       <img
               className="TV_screen nicolson"
               alt="tv"
               src="../../../public/nicolson.gif"
             ></img>
-          ) : degreeAngle === 160 ? (
-            <div className="TV_screen">
-              <div className="noise"></div>
-            </div>
-          ) : degreeAngle === 200 ? (
-            <div>
-              <p className="TV_language">
-                Languages:
-                <br />
-                English-C1
-                <br /> Spanish-A2
-                <br /> Russian-Native
-              </p>
-              <img
-                className="TV_screen tetris"
-                alt="tv"
-                src="../../../public/tetris.gif"
-              ></img>
             </div>
           ) : degreeAngle === 240 ? (
-            <div className="TV_screen ">
-              <img
-                className="TV_screen mario"
-                alt="tv"
-                src="../../../public/mario.gif"
-              ></img>
-              <h5 className="marioText">My programming skills</h5>
-              <ul>
-                <li>HTML5/CSS/SASS</li>
-                <li>JS/TS</li>
-                <li>React / Redux </li>
-                <li>React Native/React spring</li>
-                <li>React Testing Library</li>
-                <li>NestJS</li>
-                <li>Git/swagger</li>
-                <li>SQL/Prettier/Husky/Axious</li>
-              </ul>
+            <div className="TV_screen">
               <div className="noise"></div>
             </div>
           ) : (

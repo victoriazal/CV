@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: calc(100vh);
 }
 
@@ -11,8 +12,8 @@
     width: calc(21vw);
     position: absolute;
     font-family: "VT323";
-    top: 20%;
-    left: 18%;
+    top: 22%;
+    left: 20%;
     background-color: transparent;
   }
   &_box {
@@ -22,19 +23,18 @@
     width: calc(38vw);
     height: calc(28vw);
     position: absolute;
-    background-color: black;
     border-radius: 12px;
+    box-sizing: border-box;
+    margin: 15px 0 0 10px;
     top: 21.5%;
     left: 11.5%;
     color: rgb(101, 103, 98);
     box-shadow: 0px 0px 15px 20px rgba(51, 48, 48, 0.31);
     
     p {
-      line-height: 1;
-      background: white;
-      color: black;
-      opacity: 0.5;
-      font-size: 18px;
+      color: rgba(125, 251, 57, 0.616);
+      opacity: 0.8;
+      font-size: calc(2.7vw);
       font-family: "VT323";
       font-weight: 400;
       margin: 5px 10px;
@@ -47,6 +47,7 @@
       color: black;
       font-family: "VT323";
       margin-bottom: 2px;
+      font-size: calc(2vh);
       margin-right: 10px;
       overflow: hidden;
       border-right: .15em solid rgb(28, 255, 3);
@@ -104,7 +105,17 @@
   margin: 30px 0 5px 40px;
   z-index: 50;
   font-family: "VT323";
-  font-size: 18px;
+  font-size: calc(2.3vw);
+}
+.switch-hint{
+  color: aliceblue;
+  font-family: "VT323";
+  position: absolute;
+  display: flex;
+  top: calc(22vh);
+  &_arrow{
+    margin-left: 60px;
+  }
 }
 @keyframes typing {
   from {
