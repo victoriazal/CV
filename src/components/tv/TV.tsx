@@ -24,13 +24,13 @@ export default function Tv() {
           <img
             className="TV_box"
             alt="tv"
-            src="../../../public/IMG_7690.png"
+            src="../../../IMG_7690.png"
           ></img>
           {degreeAngle === 40 ? (
             <img
               className="TV_screen"
               alt="tv"
-              src="../../../public/giphy.gif"
+              src="../../../giphy.gif"
             ></img>
           ) : degreeAngle === 80 ? (
             <div className="TV_screen">
@@ -54,7 +54,7 @@ export default function Tv() {
           <img
             className="TV_screen tetris"
             alt="tv"
-            src="../../../public/tetris.gif"
+            src="../../..//tetris.gif"
           ></img>
             </div>
           ) : degreeAngle === 160 ? (
@@ -62,7 +62,7 @@ export default function Tv() {
             <img
               className="TV_screen mario"
               alt="tv"
-              src="../../../public/mario.gif"
+              src="../../../mario.gif"
             ></img>
             <h5 className="marioText">My programming skills</h5>
             <ul>
@@ -82,7 +82,7 @@ export default function Tv() {
                        <img
               className="TV_screen nicolson"
               alt="tv"
-              src="../../../public/nicolson.gif"
+              src="../../../nicolson.gif"
             ></img>
             </div>
           ) : degreeAngle === 240 ? (
@@ -94,7 +94,7 @@ export default function Tv() {
               <img
                 className="TV_screen pongCats"
                 alt="tv"
-                src="../../../public/pongCats.gif"
+                src="../../../pongCats.gif"
               ></img>
             </div>
           )}
@@ -103,7 +103,7 @@ export default function Tv() {
             className="TV_switch"
             onClick={() => handleSwitchClick()}
             alt="tv"
-            src="../../../public/IMG_7651.png"
+            src="../../../IMG_7651.png"
           ></img>
         </div>
       </div>
