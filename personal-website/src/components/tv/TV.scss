@@ -18,6 +18,7 @@
   }
   &_box {
     width: calc(75vw);
+    max-width: 700px;
   }
   &_screen {
     width: calc(38vw);
@@ -112,8 +113,9 @@
   font-family: "VT323";
   position: absolute;
   display: flex;
-  top: calc(22vh);
+  top: calc(15vh);
   &_arrow{
+    max-width: 150px;
     margin-left: 60px;
   }
 }

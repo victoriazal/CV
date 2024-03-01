@@ -17,7 +17,7 @@ export default function Tv() {
               <h2>
                 switch the channel,please
               </h2>
-              <img className="switch-hint_arrow" src="" alt="arrow" />
+              <img className="switch-hint_arrow" src="../../../arrow.png" alt="arrow" />
               </div>
           ):''}
         <div className="TV">
